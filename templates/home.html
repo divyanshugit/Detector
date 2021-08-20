@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Detectors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 class="title">Detectors</h1>
+
+<div id="app" class="container">
+  <card data-image="https://images.unsplash.com/photo-1562240020-ce31ccb0fa7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80">
+    <h1 slot="header">Spam Filter</h1>
+    <p slot="content"><a href="{{url_for('projects', filename='script.js')}}"><i class="fa fa-external-link" aria-hidden="true"></i> Live Demo</a></p>
+    
+  </card>
+  <card data-image="https://images.unsplash.com/photo-1517105274840-437212774105?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80">
+    <h1 slot="header">Coming Soon</h1>
+    <p slot="content"><a href="spam.html"><i class="fa fa-external-link" aria-hidden="true"></i> Live Demo</a>
+    </p>
+  </card>
+  <card data-image="https://images.unsplash.com/photo-1526925539332-aa3b66e35444?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80">
+    <h1 slot="header">Coming Soon</h1>
+    <p slot="content"><a href="spam.html"><i class="fa fa-external-link" aria-hidden="true"></i> Live Demo</a></p>
+  </card>
+  <card data-image="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+    <h1 slot="header">Coming Soon</h1>
+    <p slot="content"><a href="spam.html"><i class="fa fa-external-link" aria-hidden="true"></i> Live Demo</a></p>
+  </card>
+  
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+  <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+
+</body>
+</html>
